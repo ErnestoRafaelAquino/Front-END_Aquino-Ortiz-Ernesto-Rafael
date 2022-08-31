@@ -1,0 +1,48 @@
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+  }
+  
+  #final iframe {
+    width: 80%;
+    height: 80%;
+  }
+  
+  #final h2 {
+    font-size: 9vw;
+    padding-top: 120px;
+  }
+  
+  #final button {
+    font-size: 5vw;
+  }
+  #boton a {
+    padding: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 60px;
+    text-decoration: none;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #boton a:hover {
+    transform: scale(1.2);
+  }
+  @media (min-width: 800px) {
+    #final h2 {
+      font-size: 5em;
+    }
+  
+    #final button {
+      font-size: 2em;
+    }
+  }
+  

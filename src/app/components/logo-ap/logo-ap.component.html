@@ -1,0 +1,19 @@
+<header>
+    <details>
+      <summary>   Navegador   </summary>
+      <div class="container">
+        <p class="logo">Exito!</p>
+        <nav>
+          <a href="#conocimiento">Habilidades</a>
+          <a href="#formacion">Formación</a>
+          <a href="#skill">Skillset</a>
+          <a href="#conocimiento3">Proyectos</a>
+          <a href="#ROWA">Experiencia</a>
+          <a href="#final">Contacto</a>
+          <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+          <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+        </nav>
+      </div>
+    </details>
+</header>
+  

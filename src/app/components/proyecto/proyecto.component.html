@@ -1,0 +1,59 @@
+<section id="conocimiento3">
+  <h1>PROYECTOS</h1>
+
+  <div class="col-lg-2">
+    <button
+      type="button"
+      class="btn btn-dark"
+      routerLink="/nuevahaypro"
+      *ngIf="isLogged"
+    >
+      Agregar Proyecto
+    </button>
+  </div>
+
+  <div id="conocimientos2">
+    <div class="container2">
+      <div class="programas2">
+        <div
+          class="carta2"
+          *ngFor="let Haypro of haypro"
+          [ngStyle]="{
+            'background-image':
+              'linear-gradient(0deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(' +
+              Haypro.imgH +
+              ')'
+          }"
+        >
+          <h3>{{ Haypro.tituloH }}</h3>
+          <div class="boton-html2">
+            <details>
+              <summary>Click aqui! Hay mas</summary>
+              <div>
+                <p>
+                  {{ Haypro.textoH }}
+                </p>
+                <a href="{{ Haypro.linkH }}">Vinculo</a>
+              </div>
+            </details>
+          </div>
+          <div *ngIf="isLogged" class="con-bot">
+            <div>
+              <button
+                class="btn btn-light"
+                routerLink="/edithaypro/{{ Haypro.id }}/"
+              >
+                <i class="bi bi-pencil-fill"></i>  EDITAR 
+              </button>
+            </div>
+            <div>
+              <button class="btn btn-danger" (click)="delete(Haypro.id)">
+                <i class="bi bi-trash-fill"> </i>BORRAR
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

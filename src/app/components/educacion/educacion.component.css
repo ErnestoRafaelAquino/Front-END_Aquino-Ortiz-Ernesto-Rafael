@@ -1,0 +1,21 @@
+.educa{
+    padding: 20px;
+}
+section{
+    background: rgb(43, 43, 43);
+    color: aliceblue;
+}
+h1, h3{
+    display: inline;
+}
+
+h1{
+    color: blueviolet;
+}
+
+h2{
+    color: aliceblue;
+}
+td{
+    color: aliceblue;
+}

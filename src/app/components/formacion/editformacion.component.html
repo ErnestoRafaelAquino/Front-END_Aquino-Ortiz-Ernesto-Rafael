@@ -1,0 +1,19 @@
+<div class="container" *ngIf="formacion">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="contenidoM">Contenido del texto</label>
+                    <input type="text" class="form-control" id="contenidoM" name="contenidoM" [(ngModel)]="formacion.contenidoM" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgM">Imagen</label>
+                    <input type="text" class="form-control" id="imgM" name="imgM" [(ngModel)]="formacion.imgM" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar contenido
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

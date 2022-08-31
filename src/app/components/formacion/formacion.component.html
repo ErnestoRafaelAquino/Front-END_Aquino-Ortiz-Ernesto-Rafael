@@ -1,0 +1,43 @@
+<section id="formacion">
+
+  <div class="col-lg-2">
+    <button
+      type="button"
+      class="btn btn-dark"
+      routerLink="/nuevaformacion"
+      *ngIf="isLogged"
+    >
+      Agregar Datos
+    </button>
+  </div>
+
+  <div class="container" *ngFor="let Formacion of formacion">
+    <div
+      class="img-container"
+      [ngStyle]="{ 'background-image': 'url(' + Formacion.imgM + ')' }"
+    ></div>
+    <div class="texto">
+      <h2>Mi formacion <span class="color-acento">Veamos!</span></h2>
+      <details>
+        <summary>VER CONTENIDO! ¡Haz clic aquí!</summary>
+        <p>
+          {{ Formacion.contenidoM }}
+        </p>
+      </details>
+    </div>
+
+    <div *ngIf="isLogged">
+      <button
+        class="btn btn-light"
+        routerLink="/editformacion/{{ Formacion.id }}"
+      >
+        <i class="bi bi-pencil-fill"></i> EDITAR
+      </button>
+    </div>
+    <div *ngIf="isLogged">
+      <button class="btn btn-danger" (click)="delete(Formacion.id)">
+        <i class="bi bi-trash-fill"></i> BORRAR
+      </button>
+    </div>
+  </div>
+</section>

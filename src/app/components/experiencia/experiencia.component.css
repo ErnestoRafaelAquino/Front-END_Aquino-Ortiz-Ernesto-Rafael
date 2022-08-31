@@ -1,0 +1,19 @@
+.rowa{
+    padding: 20px;
+}
+section{
+    background: rgb(43, 43, 43);
+    color:#4b4c4d;
+}
+h1, h3{
+    display: inline;
+}
+h1{
+    color: rgb(138, 43, 226);
+}
+h2{
+    color: aliceblue;
+}
+td{
+    color: aliceblue;
+}

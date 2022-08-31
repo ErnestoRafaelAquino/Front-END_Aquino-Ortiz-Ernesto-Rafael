@@ -1,0 +1,60 @@
+<section id="backgro">
+  <div id="skill">
+    <h1><span>S</span>KILL<span>SET</span></h1>
+  </div>
+  <div class="col-lg-2">
+    <button
+      type="button"
+      class="btn btn-dark"
+      routerLink="/nuevaskill"
+      *ngIf="isLogged"
+    >
+      Agregar Skill
+    </button>
+  </div>
+
+  <div class="flex-algo">
+    <div class="container">
+      <div class="porcentaje" *ngFor="let Hayki of hayki">
+        <div class="card">
+          <div class="box">
+            <div class="porcent">
+              <svg>
+                <circle cx="70" cy="70" r="70" />
+                <circle
+                  cx="70"
+                  cy="70"
+                  r="70"
+                  [ngStyle]="{
+                    'stroke-dashoffset':
+                      'calc(440 - (440 * ' + Hayki.porcentajeH + '/ 100))',
+                    stroke: 'rgb(255, 0, 0)'
+                  }"
+                />
+              </svg>
+              <div class="number" *ngIf="Hayki">
+                <img src="{{ Hayki.imgH }}" alt="" />
+              </div>
+              <h3 class="text">{{ Hayki.nombreH }}</h3>
+              <div class="con-bot">
+                <td *ngIf="isLogged">
+                  <button
+                    class="btn btn-light"
+                    routerLink="/editskill/{{ Hayki.id }}"
+                  >
+                    <i class="bi bi-pencil-fill"></i>
+                  </button>
+                </td>
+                <td *ngIf="isLogged">
+                  <button class="btn btn-danger" (click)="delete(Hayki.id)">
+                    <i class="bi bi-trash-fill"></i>
+                  </button>
+                </td>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,89 @@
+#conocimiento {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center center;
+ 
+  }
+
+  #conocimiento h2{
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 3.5em;
+  }
+  /*go brillo*/
+  #conocimiento h2:hover span:nth-child(1){
+    margin-right: 5px;
+  }
+  #conocimiento h2:hover span:nth-child(2){
+    margin-left: 40px;
+  }
+  #conocimiento h2:hover span{
+    color: rgb(39, 39, 39);
+    text-shadow: 0 0 10px rgb(138, 43, 226),
+    0 0 20px rgb(138, 43, 226),
+    0 0 40px rgb(138, 43, 226);
+  }
+  /*brillo*/
+  .con-bot{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #conocimientos2 {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center center;
+  }
+  
+  #conocimientos2 .container2 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  #conocimientos2 .programas2 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  
+  #conocimientos2 .programas2 .carta2 {
+    padding: 20px;
+    margin: 1vh;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px 0px;
+  }
+  
+  .boton-html2 {
+    text-size-adjust: auto;
+    justify-content: center;
+    width: cover;
+    background-color: #0000008a;
+    background-image: rgba(30, 30, 30, 0.61);
+    border-radius: 5px;
+    margin-top: 10vh;
+  }
+  
+  #conocimientos2 h2 {
+    margin: none;
+    padding-top: 20px;
+    text-size-adjust: 100%;
+    font-weight: 500;
+    font-size: 51.2px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 61.44px;
+  }
+  @media (max-width: 800px) {
+    #conocimientos2 .programas2 .carta2 {
+      padding: 20px;
+      margin: 1vh;
+      width: auto;
+    }
+  }
+  

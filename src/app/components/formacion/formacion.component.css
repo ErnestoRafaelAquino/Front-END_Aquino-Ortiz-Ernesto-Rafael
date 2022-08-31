@@ -1,0 +1,40 @@
+#formacion .container {
+    text-align: center;
+    padding: 40px 12px;
+  }
+  #formacion {
+    background-color: rgb(43, 43, 43);
+  }
+  h2, p{
+    color: rgb(110, 110, 110);
+  }
+  summary{
+    color: burlywood;
+  }
+  @media (min-width: 800px) {
+    #formacion .container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    #formacion .texto {
+      width: 50%;
+      max-width: 600px;
+      text-align: initial;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #formacion h2 {
+      margin-top: 0px;
+    }
+  
+    #formacion .img-container {
+      background-size: cover;
+      background-position: center center;
+      height: 500px;
+      width: 400px;
+    }
+  }

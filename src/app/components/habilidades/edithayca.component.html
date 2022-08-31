@@ -1,0 +1,43 @@
+<div class="container" *ngIf="hayca">
+    <div class="row">
+      <div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="tituloH">Titulo de la tarjeta</label>
+            <input
+              type="text"
+              class="form-control"
+              id="tituloH"
+              name="tituloH"
+              [(ngModel)]="hayca.tituloH"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="imgH">URL de la imagen</label>
+            <input
+              type="text"
+              class="form-control"
+              id="imgH"
+              name="imgH"
+              [(ngModel)]="hayca.imgH"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="textoH">Descripcion Texto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="textoH"
+              name="textoH"
+              [(ngModel)]="hayca.textoH"
+              required
+            />
+          </div>
+          <button class="btn btn-primary">Editar skill</button>
+        </form>
+      </div>
+    </div>
+  </div>
+

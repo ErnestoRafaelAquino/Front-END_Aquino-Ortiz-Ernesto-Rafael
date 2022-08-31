@@ -1,0 +1,43 @@
+<aside id="baner">
+
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaformacion" *ngIf="isLogged">
+        Agregar
+    </button>
+  </div>
+
+  <div class="barra">
+    <img id="APlogo" src="../../../assets/APLogo.png" alt="logo" />
+  </div>
+  <div id="cent" *ngFor="let Baner of baner">
+    <img
+      class="circle"
+      src="{{ Baner.imgH }}"
+      alt="logo large"
+    />
+  </div>
+
+  <h1 id="nombre">Aquino Ernesto Rafael</h1>
+  <hr />
+  <div *ngFor="let Baner of baner">
+    <div>
+    <h2>{{ Baner.profesionH }}</h2>
+  </div>
+  <div><h5 style="color: rgba(150, 87, 15, 0.514)">Acerca de mi</h5></div>
+  <p >{{ Baner.acercaH }}</p>
+  
+  <div *ngIf="isLogged">
+    <button class="btnbaner" class="btn btn-light" routerLink="/editbaner/{{Baner.id}}">
+        <i class="bi bi-pencil-fill"></i> EDITAR</button>
+    </div>
+  </div>
+  
+  
+  <video class="video" autoplay>
+    <source
+      src="https://www.xaviro.com/assets/c97fb08d9006a59b6013.mp4"
+      alt="https://www.xaviro.com/assets/c97fb08d9006a59b6013.mp4"
+    />
+  </video>
+  
+</aside>

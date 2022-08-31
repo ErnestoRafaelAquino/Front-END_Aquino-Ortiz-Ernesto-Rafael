@@ -1,0 +1,42 @@
+<div class="container" *ngIf="baner">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreH">Profesion</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombreH"
+            name="nombreH"
+            [(ngModel)]="baner.profesionH"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="imgH">Acerda</label>
+          <input
+            type="text"
+            class="form-control"
+            id="imgH"
+            name="imgH"
+            [(ngModel)]="baner.acercaH"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="porcentajeH">Imagen baner</label>
+          <input
+            type="text"
+            class="form-control"
+            id="porcentajeH"
+            name="porcentajeH"
+            [(ngModel)]="baner.imgH"
+            required
+          />
+        </div>
+        <button class="btn btn-primary">Editar skill</button>
+      </form>
+    </div>
+  </div>
+</div>

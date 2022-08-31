@@ -1,0 +1,16 @@
+section {
+  background-color: rgb(30, 30, 30);
+}
+#p45 {
+  padding-top: 3vh;
+}
+footer {
+  padding-top: 20px;
+  color: rgb(100, 100, 100);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*box-shadow: 2px -2px 5px rgba(186, 67, 255, 0.5) ;*/
+  /*box-shadow: 2px -2px 5px rgba(255, 255, 255, 0.5) ;*/
+}

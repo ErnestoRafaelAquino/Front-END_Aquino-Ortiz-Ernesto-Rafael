@@ -1,0 +1,59 @@
+<section id="conocimiento">
+  <div>
+    <h2><span>Habilidades</span> y <span>Capacidades</span></h2>
+  </div>
+  <div class="col-lg-2">
+    <button
+      type="button"
+      class="btn btn-dark"
+      routerLink="/nuevahayca"
+      *ngIf="isLogged"
+    >
+      Agregar
+    </button>
+  </div>
+
+  <div id="conocimientos2">
+    <div class="container2">
+      <div class="programas2">
+        <div
+          class="carta2"
+          *ngFor="let Hayca of hayca"
+          [ngStyle]="{
+            'background-image':
+              'linear-gradient(0deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(' +
+              Hayca.imgH +
+              ')'
+          }"
+        >
+          <h3>{{ Hayca.tituloH }}</h3>
+          <div class="boton-html2">
+            <details>
+              <summary>Click aqui! Hay mas</summary>
+              <div>
+                <p>
+                  {{ Hayca.textoH }}
+                </p>
+              </div>
+            </details>
+          </div>
+          <div class="con-bot">
+            <div *ngIf="isLogged">
+              <button
+                class="btn btn-light"
+                routerLink="/edithayca/{{ Hayca.id }}/"
+              >
+                <i class="bi bi-pencil-fill"></i>  EDITAR 
+              </button>
+            </div>
+            <div *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="delete(Hayca.id)">
+                <i class="bi bi-trash-fill"></i> BORRAR
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

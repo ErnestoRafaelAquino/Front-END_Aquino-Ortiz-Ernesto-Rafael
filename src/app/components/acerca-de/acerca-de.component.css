@@ -1,0 +1,69 @@
+aside {
+    background: linear-gradient(var(--black), var(--black2));
+    overflow: hidden;
+    padding: 5rem 0 3rem;
+    position: relative;
+    height: auto;
+  }
+  aside .circle {
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 30vh;
+    height: 30vh;
+  }
+  button{
+    position: relative;
+  }
+  #cent {
+    display: flex;
+    justify-content: center;
+  }
+  aside img {
+    width: 50vh;
+    height: 50vh;
+    border: rgba(255, 255, 255, 0.089) solid 4px;
+  }
+  aside h2 {
+    display: flex;
+    justify-content: center;
+  }
+  aside p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  aside {
+    display: block;
+    padding-top: 0;
+  }
+  aside video {
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  video {
+    object-fit: contain;
+  }
+  #APlogo {
+    width: 130px;
+    height: 70px;
+    border: none;
+    position: absolute;
+    left: 3%;
+  }
+  
+  aside{
+    color: var(--white);
+  }
+  
+  
+/*etiqueta nombre*/
+#nombre{
+    font-weight: bold;
+    margin-top: 3%;
+}

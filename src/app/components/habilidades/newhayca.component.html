@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+      <div>
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="nombreH">Titulo del hayca</label>
+            <input
+              type="text"
+              class="form-control"
+              id="tituloH"
+              name="tituloH"
+              [(ngModel)]="tituloH"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="imgH">URL de la imagen</label>
+            <input
+              type="text"
+              class="form-control"
+              id="imgH"
+              name="imgH"
+              [(ngModel)]="imgH"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="porcentajeH">Descripcion texto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="textoH"
+              name="textoH"
+              [(ngModel)]="textoH"
+              required
+            />
+          </div>
+          <button class="btn btn-primary">Agregar tarjeta</button>
+        </form>
+      </div>
+    </div>
+  </div>
